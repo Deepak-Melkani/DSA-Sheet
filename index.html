@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="A personal DSA practice tracker with an ordered 402-problem A2Z dataset." />
+  <title>DSA Vault — Personal DSA Tracker</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">DSA<span>Vault</span></a>
+    <span class="tag">PERSONAL TRACKER</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">YOUR PRACTICE. YOUR RULES.</p>
+      <h1>Master <span>DSA</span>, one problem at a time.</h1>
+      <p class="subtitle">
+        An ordered problem library based on the supplied Striver A2Z dataset.
+        Practise on LeetCode, GeeksforGeeks, or takeUforward when a link is available.
+      </p>
+      <div class="stats">
+        <div class="stat"><span class="stat-label">TOTAL PROBLEMS</span><strong id="totalCount">0</strong></div>
+        <div class="stat"><span class="stat-label">SOLVED</span><strong id="solvedCount">0</strong></div>
+        <div class="stat"><span class="stat-label">COMPLETION</span><strong id="completion">0%</strong></div>
+      </div>
+      <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+      <div class="meta-line" id="datasetMeta">Loading dataset…</div>
+    </section>
+
+    <section class="workspace">
+      <div class="section-heading">
+        <div><p class="eyebrow">YOUR ROADMAP</p><h2>Problem library</h2></div>
+        <button id="exportBtn" class="secondary-btn" type="button">Export progress</button>
+      </div>
+
+      <div class="filters">
+        <input id="searchInput" type="search" placeholder="Search problem, module, or topic…" aria-label="Search problems" />
+        <select id="moduleFilter" aria-label="Filter by module"><option value="">All modules</option></select>
+        <select id="topicFilter" aria-label="Filter by subtopic"><option value="">All subtopics</option></select>
+        <select id="statusFilter" aria-label="Filter by status">
+          <option value="all">All problems</option><option value="pending">Unsolved</option><option value="solved">Solved</option>
+        </select>
+      </div>
+
+      <p id="resultCount" class="result-count" aria-live="polite">Loading problems…</p>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Status</th><th>Order</th><th>Problem</th><th>Difficulty</th><th>Practice links</th></tr></thead>
+          <tbody id="problemTable"><tr><td colspan="5" class="empty">Loading…</td></tr></tbody>
+        </table>
+      </div>
+      <div id="errorMessage" class="error-message" hidden></div>
+    </section>
+
+    <footer>
+      <div><p>Progress is saved in this browser only. Export backups regularly.</p>
+      <p class="source-note">Dataset source: takeUforward sheet payload as represented in the supplied JSON. Platform links are retained only when present in that file.</p></div>
+      <label class="import-btn">Import progress<input id="importInput" type="file" accept=".json,application/json" hidden /></label>
+    </footer>
+  </main>
+</body>
+</html>

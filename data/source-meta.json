@@ -1,0 +1,115 @@
+{
+  "title": "Striver's A2Z DSA Sheet",
+  "problemCount": 402,
+  "stepCount": 19,
+  "generated": "2026-09-20",
+  "source": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/",
+  "steps": [
+    {
+      "n": 1,
+      "title": "Beginner Problems",
+      "count": 60
+    },
+    {
+      "n": 2,
+      "title": "Sorting",
+      "count": 5
+    },
+    {
+      "n": 3,
+      "title": "Arrays",
+      "count": 32
+    },
+    {
+      "n": 4,
+      "title": "Hashing",
+      "count": 5
+    },
+    {
+      "n": 5,
+      "title": "Binary Search",
+      "count": 31
+    },
+    {
+      "n": 6,
+      "title": "Recursion",
+      "count": 17
+    },
+    {
+      "n": 7,
+      "title": "Linked-List",
+      "count": 39
+    },
+    {
+      "n": 8,
+      "title": "Bit Manipulation",
+      "count": 7
+    },
+    {
+      "n": 9,
+      "title": "Greedy Algorithms",
+      "count": 14
+    },
+    {
+      "n": 10,
+      "title": "Sliding Window / 2 Pointer",
+      "count": 11
+    },
+    {
+      "n": 11,
+      "title": "Stack / Queues",
+      "count": 22
+    },
+    {
+      "n": 12,
+      "title": "Binary Trees",
+      "count": 31
+    },
+    {
+      "n": 13,
+      "title": "Binary Search Trees",
+      "count": 13
+    },
+    {
+      "n": 14,
+      "title": "Heaps",
+      "count": 9
+    },
+    {
+      "n": 15,
+      "title": "Graphs",
+      "count": 42
+    },
+    {
+      "n": 16,
+      "title": "Dynamic Programming",
+      "count": 47
+    },
+    {
+      "n": 17,
+      "title": "Tries",
+      "count": 6
+    },
+    {
+      "n": 18,
+      "title": "Strings (Advanced Algo)",
+      "count": 8
+    },
+    {
+      "n": 19,
+      "title": "Maths",
+      "count": 3
+    }
+  ],
+  "platforms": {
+    "takeuforward": 82,
+    "gfg": 88,
+    "leetcode": 232
+  },
+  "withDifficulty": 325,
+  "sources": {
+    "order,titles,links": "takeuforward.org sheet payload",
+    "difficulty": "leetcode.com GraphQL, geeksforgeeks.org pages, codolio.com",
+    "gfgLinks": "verified GeeksforGeeks matches"
+  }
+}
